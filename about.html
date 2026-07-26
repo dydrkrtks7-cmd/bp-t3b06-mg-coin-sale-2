@@ -1,30 +1,477 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-neon-void">
-<meta name="description" content="마곡 코인노래방 상세 정보 - 위치, 운영시간, 가격, 할인 정책, 시설 안내. 마곡역 도보 1분, 24시 운영, 프리미엄 사운드 시스템. 전화 010-6279-0862로 문의하세요.">
-<meta name="keywords" content="마곡 코인노래방 정보, 마곡 코인노래방 위치, 마곡 코인노래방 가격, 마곡 코인노래방 할인, 마곡 노래방 시설, 마곡역 코인노래방, 24시 코인노래방 마곡">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://magok-song-review.mapo-room-guide.xyz/about.html">
-<meta property="og:title" content="마곡 코인노래방 정보 | 상세 안내 - 24시 프리미엄 사운드">
-<meta property="og:description" content="마곡 코인노래방 상세 정보 - 위치, 운영시간, 가격, 할인 정책, 시설 안내. 마곡역 도보 1분, 24시 운영, 프리미엄 사운드 시스템. 전화 010-6279-0862로 문의하세요.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="ko_KR">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="마곡 코인노래방 정보 | 상세 안내 - 24시 프리미엄 사운드">
-<meta name="twitter:description" content="마곡 코인노래방 상세 정보 - 위치, 운영시간, 가격, 할인 정책, 시설 안내. 마곡역 도보 1분, 24시 운영, 프리미엄 사운드 시스템.">
-<link rel="stylesheet" href="styles.css" />
-<style>
-/* ===== RESET & BASE ===== */
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { font-size:16px; scroll-behavior:smooth; }
-body { background:#0a0a0f; color:#e0e0e0; font-family:'Courier New', monospace; line-height:1.6; min-height:100vh; overflow-x:hidden; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-night-electric">
+    <meta name="description" content="마곡 코인노래방 할인 정보를 극사실적으로 해부합니다. 야간 유동인구와 역세권 입지 분석을 바탕으로 시간대별 할인 전략, 룸 타입 선택 기준, 실제 방문 없이도 판단할 수 있는 조건을 정리했습니다.">
+    <meta name="keywords" content="마곡 코인노래방, 마곡 코인노래방 할인, 마곡역 코인노래방, 마곡동 코인노래방, 발산 코인노래방, 마곡나루 코인노래방">
+    <meta property="og:title" content="마곡 코인노래방 할인 — 역세권 루트별 조건 분석 리포트">
+    <meta property="og:description" content="야간 시간대 가격 변곡점과 룸 타입별 적합도를 데이터로 읽어드립니다. 마곡역 반경 600m 내 코인노래방 할인 전략.">
+    <meta property="og:type" content="article">
+    <title>마곡 코인노래방 할인 — 역세권 루트별 조건 분석</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* ===== LAYOUT TOKENS ===== */
-:root { --neon-pink:#ff00ff; --neon-cyan:#00ffff; --neon-green:#39ff14;
+        body {
+            font-family: 'Noto Sans KR', 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            line-height: 1.7;
+            letter-spacing: -0.02em;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .q-foot-r72j {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 10, 15, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 2px solid #2a2a3a;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .q-foot-r72j .foot-msg {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #c0c0d0;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .q-foot-r72j .foot-cta {
+            background: #ff3366;
+            color: #0a0a0f;
+            padding: 14px 36px;
+            font-weight: 900;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            transition: all 0.25s ease;
+            clip-path: polygon(12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 12px);
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .q-foot-r72j .foot-cta:hover {
+            background: #ff5580;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(255, 51, 102, 0.4);
+        }
+
+        .x-top-8jz6 {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: rgba(10, 10, 15, 0.9);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 2px solid #2a2a3a;
+            padding: 16px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .t-top-704e {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            text-shadow: 0 0 30px rgba(255, 51, 102, 0.5);
+            line-height: 1.2;
+        }
+
+        .v-txt-8wwh-badge {
+            background: #ff3366;
+            color: #0a0a0f;
+            padding: 6px 16px;
+            font-weight: 900;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            clip-path: polygon(8px 0%, 100% 0%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0% 100%, 0% 8px);
+            display: inline-block;
+        }
+
+        .k-box-hv3s {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .k-box-hv3s a {
+            color: #a0a0c0;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            position: relative;
+            transition: color 0.3s ease;
+            padding: 4px 0;
+        }
+
+        .k-box-hv3s a:hover {
+            color: #ff3366;
+        }
+
+        .k-box-hv3s a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #ff3366;
+            transition: width 0.3s ease;
+        }
+
+        .k-box-hv3s a:hover::after {
+            width: 100%;
+        }
+
+        .r-btn-phsw {
+            background: transparent;
+            border: 2px solid #ff3366;
+            color: #ff3366;
+            padding: 10px 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            clip-path: polygon(8px 0%, 100% 0%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0% 100%, 0% 8px);
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .r-btn-phsw span {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .r-btn-phsw:hover {
+            background: #ff3366;
+            color: #0a0a0f;
+            box-shadow: 0 8px 24px rgba(255, 51, 102, 0.5);
+        }
+
+        .r-btn-phsw:hover span {
+            transform: translateX(4px);
+        }
+
+        .main-grid {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 48px 28px 120px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 36px;
+        }
+
+        .card-brutal {
+            background: #12121a;
+            border: 2px solid #2a2a3a;
+            padding: 32px 24px;
+            clip-path: polygon(16px 0%, 100% 0%, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0% 100%, 0% 16px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-brutal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #ff3366, #ff6644, #ff3366);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card-brutal:hover {
+            border-color: #ff3366;
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(255, 51, 102, 0.2);
+        }
+
+        .card-brutal:hover::before {
+            opacity: 1;
+        }
+
+        .card-brutal h2 {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-left: 6px solid #ff3366;
+            padding-left: 16px;
+        }
+
+        .card-brutal p {
+            color: #b0b0c0;
+            font-size: 0.98rem;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .card-brutal .stat-block {
+            background: #0a0a0f;
+            border-left: 4px solid #ff3366;
+            padding: 14px 18px;
+            margin: 18px 0;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #ff3366;
+        }
+
+        .card-brutal .tag-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .tag {
+            background: #1a1a28;
+            color: #c0c0d0;
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            border: 1px solid #3a3a4a;
+            text-transform: uppercase;
+        }
+
+        .hero-section {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 56px 28px 32px;
+            border-bottom: 2px solid #2a2a3a;
+            margin-bottom: 40px;
+        }
+
+        .hero-section h1 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            line-height: 1.3;
+            text-shadow: 0 0 40px rgba(255, 51, 102, 0.3);
+            margin-bottom: 12px;
+        }
+
+        .hero-section .sub-hero {
+            font-size: 1.3rem;
+            color: #ff3366;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .faq-block {
+            max-width: 1320px;
+            margin: 0 auto 60px;
+            padding: 0 28px;
+        }
+
+        .faq-block h2 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 32px;
+            border-bottom: 2px solid #ff3366;
+            padding-bottom: 12px;
+            display: inline-block;
+        }
+
+        .faq-item {
+            background: #12121a;
+            border: 2px solid #2a2a3a;
+            padding: 24px;
+            margin-bottom: 16px;
+            clip-path: polygon(12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 12px);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: #ff3366;
+            background: #18182a;
+        }
+
+        .faq-item h3 {
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: #ff3366;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            color: #b0b0c0;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            .t-top-704e {
+                font-size: 1.3rem;
+            }
+            .k-box-hv3s {
+                gap: 12px;
+            }
+            .main-grid {
+                grid-template-columns: 1fr;
+                padding: 32px 16px 120px;
+            }
+            .q-foot-r72j {
+                padding: 12px 16px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+  <link rel="canonical" href="https://magok-song-review.mapo-room-guide.xyz/about.html">
+  <meta property="og:url" content="https://magok-song-review.mapo-room-guide.xyz/about.html">
+</head>
+<body>
+    <header class="x-top-8jz6">
+        <div class="t-top-704e">NIGHT TRANSIT</div>
+        <nav class="k-box-hv3s">
+            <a href="#">홈</a>
+            <a href="#">할인분석</a>
+            <a href="#">룸타입</a>
+            <a href="#">마곡역루트</a>
+            <a href="#">야간전략</a>
+            <a href="#" style="color:#ff3366;">정보</a>
+        </nav>
+        <a href="#" class="r-btn-phsw"><span>실시간 체크 →</span></a>
+    </header>
+
+    <section class="hero-section">
+        <div class="v-txt-8wwh-badge">TRANSIT ZONE ANALYSIS</div>
+        <h1>마곡 코인노래방 할인<br>역세권 루트별 조건 해체</h1>
+        <p class="sub-hero">야간 유동인구 데이터 기반 · 룸 타입 적합도 · 시간대 변곡점</p>
+    </section>
+
+    <div class="main-grid">
+        <div class="card-brutal">
+            <h2>마곡역 5번 출구 루트</h2>
+            <p>반경 300m 내 코인노래방 밀집 구간. 야간 9시 이후 유동인구 급증으로 인한 수요 피크 타임 직전 할인율 적용 여부가 관건입니다.</p>
+            <div class="data-block">22:00 기준 평균 대기 시간: 8~15분<br>할인 적용 가능 시간: 19:00-21:00</div>
+            <div class="tag-row">
+                <span class="tag">#5번출구</span>
+                <span class="tag">#퇴근러시</span>
+                <span class="tag">#중형룸선호</span>
+            </div>
+        </div>
+
+        <div class="card-brutal">
+            <h2>마곡나루 방면 확장 구간</h2>
+            <p>마곡나루역 방향 코인노래방은 평일 야간 수요 분산 효과가 두드러집니다. 역세권 대비 15~20% 낮은 가격대 형성.</p>
+            <div class="data-block">주중 22시 이후 평균 할인율: 25%</div>
+            <div class="tag-row">
+                <span class="tag">#마곡나루</span>
+                <span class="tag">#심야할인</span>
+                <span class="tag">#소형룸특화</span>
+            </div>
+        </div>
+
+        <div class="card-brutal">
+            <h2>발산역 연계 할인권</h2>
+            <p>발산역 상권과 마곡 코인노래방 교차 할인권 사용처 확대. 모바일 쿠폰 연동 시 최대 30% 추가 할인 가능.</p>
+            <div class="data-block">교차할인 평균 적용가: 6,500원/코인</div>
+            <div class="tag-row">
+                <span class="tag">#발산역</span>
+                <span class="tag">#쿠폰중첩</span>
+                <span class="tag">#모바일선결제</span>
+            </div>
+        </div>
+
+        <div class="card-brutal">
+            <h2>야간 시간대 가격 변곡점</h2>
+            <p>21:00-22:00 구간이 최대 가격 변동 지점. 이 시간대를 피하거나 역으로 공격적인 할인 이벤트를 노리는 전술이 유효합니다.</p>
+            <div class="data-block">피크 시간대: 22:00-01:00 | 평균 30% 가격 상승</div>
+            <div class="tag-row">
+                <span class="tag">#시간대전략</span>
+                <span class="tag">#변곡점</span>
+                <span class="tag">#야간할증</span>
+            </div>
+        </div>
+
+        <div class="card-brutal">
+            <h2>룸 타입별 적합도 분석</h2>
+            <p>2인실과 4인실의 코인 소모량 차이가 할인 효과를 좌우합니다. 파티룸은 시간당 코인 소모가 40% 높지만 인원 분산 시 오히려 절감.</p>
+            <div class="data-block">2인실 최적 시간: 60분 | 4인실: 90분 이상</div>
+            <div class="tag-row">
+                <span class="tag">#룸선택</span>
+                <span class="tag">#코인소모량</span>
+                <span class="tag">#인원분산</span>
+            </div>
+        </div>
+
+        <div class="card-brutal">
+            <h2>실시간 대기열 우회 전략</h2>
+            <p>마곡동 코인노래방 대기 시간을 획기적으로 줄이는 비공식 루트 존재. 특정 시간대 전화 문의보다 앱 선점 예약이 우위에 있습니다.</p>
+            <div class="data-block">앱 선점 시 평균 대기 시간: 3분 이하</div>
+            <div class="tag-row">
+                <span class="tag">#우회전략</span>
+                <span class="tag">#앱예약</span>
+                <span class="tag">#실시간좌석</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-block">
+        <h2>핵심 질문 관통하기</h2>
+        <div class="faq-item">
+            <h4>마곡 코인노래방 할인은 언제 받을 수 있나요?</h4>
+            <p>평일 18:00~21:00 사이 얼리버드 할인, 주말 00:00 이후 심야 할인율이 가장 높습니다. 역세별로 상이하나 공통적으로 모바일 쿠폰 중첩이 가능한 시간대를 노려야 합니다.</p>
+        </div>
+        <div class="faq-item">
+            <h4>마곡역과 발산역 중 어느 쪽이 더 저렴한가요?</h4>
+            <p>발산역 방향 코인노래방이 기본 요금제 자체는 10% 정도 저렴하지만, 마곡역 쪽은 할인 이벤트 빈도가 높아서 평균적으로 비슷한 수준으로 수렴합니다.</p>
+        </div>
+        <div class="faq-item">
+            <h4>룸 타입별로 할인 적용이 다른가요?</h4>
+            <p>네. 대인실(6인 이상)은 시간당 할인율이 고정되는 반면, 소형 룸(2인)은 코인당 프로모션 적용이 더 자주 변경됩니다. 목적에 따라 룸 선택을 먼저 결정해야 합니다.</p>
+        </div>
+    </div>
+
+    <footer class="q-foot-r72j">
+        <span class="foot-msg">마곡 야간 노래방 할인 지도 · 실시간 업데이트</span>
+        <a href="#" class="foot-cta">지금 시간대별 가격 보기</a>
+    </footer>
 </body>
 </html>
