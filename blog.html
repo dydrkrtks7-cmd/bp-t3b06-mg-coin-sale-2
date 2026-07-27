@@ -1,687 +1,135 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <meta name="description" content="마곡 코인노래방 할인 정보를 한눈에! 최저가 보장, 신곡 업데이트, 프리미엄 사운드. 24시 운영. 전화 010-6279-0862로 예약하고 추가 할인 받으세요.">
-    <meta name="keywords" content="마곡 코인노래방 할인, 마곡 코인노래방, 마곡 노래방, 코인노래방 할인, 마곡 가성비 노래방">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://magok-song-review.mapo-room-guide.xyz/blog.html">
-    
-    <!-- OG / Twitter -->
-    <meta property="og:title" content="마곡 코인노래방 할인 | 24시 프리미엄 사운드">
-    <meta property="og:description" content="마곡 코인노래방 할인 정보를 한눈에! 최저가 보장, 신곡 업데이트, 프리미엄 사운드. 24시 운영. 전화 010-6279-0862로 예약하고 추가 할인 받으세요.">
-    <meta property="og:url" content="https://magok-song-review.mapo-room-guide.xyz/blog.html">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect fill='%23000' width='1200' height='630'/%3E%3Ctext x='50%25' y='50%25' fill='%23ff3b00' font-size='80' font-family='Impact' text-anchor='middle' dominant-baseline='central'%3E마곡 할인 코인노래방%3C/text%3E%3C/svg%3E">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="마곡 코인노래방 할인 | 24시 프리미엄 사운드">
-    <meta name="twitter:description" content="마곡 코인노래방 할인 정보를 한눈에! 최저가 보장, 신곡 업데이트, 프리미엄 사운드. 24시 운영.">
-    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect fill='%23000' width='1200' height='630'/%3E%3Ctext x='50%25' y='50%25' fill='%23ff3b00' font-size='80' font-family='Impact' text-anchor='middle' dominant-baseline='central'%3E마곡 할인 코인노래방%3C/text%3E%3C/svg%3E">
-    
-    <title>마곡 코인노래방 할인 | 24시 프리미엄 사운드 | 최저가 보장</title>
-    
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "마곡 코인노래방 할인",
-        "description": "마곡 지역 최저가 코인노래방. 24시 운영, 프리미엄 음향, 최신 곡 업데이트. 전화 예약 시 추가 할인.",
-        "telephone": "+82-10-6279-0862",
-        "url": "https://t3b06-mg-coin-sale-2.pages.dev",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "서울",
-            "addressRegion": "마곡",
-            "addressCountry": "KR"
-        },
-        "openingHours": "Mo-Su 00:00-24:00",
-        "priceRange": "₩₩"
-    }
-    </script>
-    
-    <style>
-        /* ===== RESET & BASE ===== */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 18px;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Impact, 'Impact', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: #000;
-            color: #fff;
-            line-height: 1.2;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
-
-        /* ===== LAYOUT TOKENS ===== */
-        :root {
-            --gap: 48px;
-            --padding: 72px;
-            --section-gap: 120px;
-            --accent: #ff3b00;
-            --border-w: 3px;
-            --border-w-heavy: 4px;
-        }
-
-        /* ===== TYPOGRAPHY ===== */
-        h1, h2, h3, h4 {
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-            line-height: 0.95;
-        }
-
-        h1 {
-            font-size: clamp(3.5rem, 12vw, 6rem);
-            margin-bottom: var(--gap);
-        }
-
-        h2 {
-            font-size: clamp(2.8rem, 8vw, 4rem);
-            margin-bottom: var(--gap);
-        }
-
-        h3 {
-            font-size: clamp(2rem, 5vw, 2.8rem);
-        }
-
-        p, li {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-            font-weight: 400;
-            line-height: 1.5;
-            font-size: 1.1rem;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            border-bottom: var(--border-w) solid currentColor;
-            transition: all 0.1s ease;
-        }
-
-        a:hover {
-            background: var(--accent);
-            color: #000;
-        }
-
-        /* ===== BRUTALIST UTILITIES ===== */
-        .skew-left {
-            transform: rotate(-1.5deg) skewX(-2deg);
-            display: inline-block;
-        }
-
-        .skew-right {
-            transform: rotate(1.5deg) skewX(2deg);
-            display: inline-block;
-        }
-
-        .border-raw {
-            border: var(--border-w-heavy) solid var(--accent);
-            padding: 16px 24px;
-        }
-
-        .border-raw-thin {
-            border: var(--border-w) solid #fff;
-            padding: 12px 20px;
-        }
-
-        .negative-margin {
-            margin-left: -4vw;
-            margin-right: -2vw;
-        }
-
-        .bg-accent {
-            background: var(--accent);
-            color: #000;
-        }
-
-        .bg-black {
-            background: #000;
-            color: #fff;
-        }
-
-        .text-outline {
-            -webkit-text-stroke: 2px var(--accent);
-            color: transparent;
-            text-shadow: 8px 8px 0 rgba(255,59,0,0.2);
-        }
-
-        /* ===== SECTIONING ===== */
-        section {
-            padding: var(--padding) var(--padding);
-            position: relative;
-        }
-
-        section + section {
-            margin-top: var(--section-gap);
-        }
-
-        .container-full {
-            max-width: none;
-            width: 100%;
-        }
-
-        .container-narrow {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--padding);
-        }
-
-        /* ===== HEADER ===== */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 24px var(--padding);
-            border-bottom: var(--border-w-heavy) solid var(--accent);
-            background: #000;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -2px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo span {
-            color: var(--accent);
-        }
-
-        .logo img, .logo svg {
-            width: 48px;
-            height: 48px;
-        }
-
-        /* navigation */
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-        }
-
-        nav a {
-            font-family: system-ui, sans-serif;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            border-bottom: none;
-            padding: 8px 0;
-            position: relative;
-        }
-
-        nav a::after {
-            content: '';
-            display: block;
-            height: var(--border-w);
-            background: var(--accent);
-            transform: scaleX(0);
-            transition: transform 0.2s;
-            transform-origin: left;
-        }
-
-        nav a:hover::after {
-            transform: scaleX(1);
-        }
-
-        .phone-link {
-            font-family: Impact, system-ui, sans-serif;
-            font-size: 1.6rem;
-            color: var(--accent);
-            border: var(--border-w) solid var(--accent);
-            padding: 8px 24px;
-            transition: 0.15s;
-            white-space: nowrap;
-        }
-
-        .phone-link:hover {
-            background: var(--accent);
-            color: #000;
-        }
-
-        /* hamburger */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 6px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-        }
-
-        .hamburger span {
-            display: block;
-            width: 32px;
-            height: 4px;
-            background: #fff;
-            border-radius: 0;
-            transition: 0.3s;
-        }
-
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(7px, 7px);
-        }
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
-
-        /* mobile nav */
-        @media (max-width: 768px) {
-            :root {
-                --padding: 36px;
-                --gap: 28px;
-                --section-gap: 80px;
-            }
-
-            header {
-                padding: 16px var(--padding);
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            nav {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #000;
-                padding: 32px var(--padding);
-                border-bottom: var(--border-w-heavy) solid var(--accent);
-                gap: 20px;
-                align-items: stretch;
-            }
-
-            nav.open {
-                display: flex;
-            }
-
-            nav a {
-                font-size: 1.4rem;
-                border-bottom: var(--border-w) solid #222;
-                padding: 12px 0;
-            }
-
-            .phone-link {
-                font-size: 1.4rem;
-                text-align: center;
-            }
-
-            .logo {
-                font-size: 1.6rem;
-            }
-        }
-
-        /* ===== HERO ===== */
-        .hero {
-            padding-top: 100px;
-            padding-bottom: 100px;
-            position: relative;
-            overflow: hidden;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            background: #000;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 40px,
-                rgba(255,59,0,0.03) 40px,
-                rgba(255,59,0,0.03) 80px
-            );
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-        }
-
-        .hero h1 {
-            margin-bottom: 24px;
-            font-size: clamp(4rem, 14vw, 7rem);
-            line-height: 0.9;
-        }
-
-        .hero h1 .accent-block {
-            display: block;
-            color: var(--accent);
-            -webkit-text-stroke: 3px var(--accent);
-            text-stroke: 3px var(--accent);
-            color: transparent;
-            margin-left: -8vw;
-        }
-
-        .hero-sub {
-            font-size: 1.6rem;
-            font-family: system-ui, sans-serif;
-            font-weight: 300;
-            max-width: 60%;
-            margin-bottom: var(--gap);
-            margin-top: calc(var(--gap) * -0.5);
-            background: rgba(0,0,0,0.7);
-            padding: 16px 24px;
-            border-left: var(--border-w-heavy) solid var(--accent);
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 32px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .hero-cta .big-phone {
-            font-size: 2.4rem;
-            font-weight: 700;
-            background: var(--accent);
-            color: #000;
-            padding: 16px 48px;
-            border: none;
-            transition: 0.1s;
-            display: inline-block;
-        }
-
-        .hero-cta .big-phone:hover {
-            background: #fff;
-            color: #000;
-            transform: scale(0.98);
-        }
-
-        .hero-badge {
-            border: var(--border-w) solid #fff;
-            padding: 12px 32px;
-            font-size: 1.2rem;
-            transform: rotate(1deg);
-            font-family: system-ui, sans-serif;
-            font-weight: 600;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                min-height: 60vh;
-                padding-top: 60px;
-                padding-bottom: 60px;
-            }
-            .hero-sub {
-                max-width: 100%;
-                font-size: 1.2rem;
-            }
-            .hero-cta {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .hero-cta .big-phone {
-                font-size: 1.6rem;
-                padding: 14px 32px;
-                width: 100%;
-                text-align: center;
-            }
-            .hero h1 .accent-block {
-                margin-left: -2vw;
-            }
-        }
-
-        /* ===== BLOG POST ===== */
-        .blog-post {
-            background: #0a0a0a;
-            border-top: var(--border-w-heavy) solid var(--accent);
-            border-bottom: var(--border-w-heavy) solid var(--accent);
-        }
-
-        .blog-post .post-meta {
-            display: flex;
-            gap: 24px;
-            font-family: system-ui, sans-serif;
-            color: #888;
-            font-size: 0.9rem;
-            border-bottom: var(--border-w) solid #222;
-            padding-bottom: 16px;
-            margin-bottom: 32px;
-            text-transform: uppercase;
-        }
-
-        .blog-post article p {
-            margin-bottom: 1.8rem;
-            max-width: 800px;
-        }
-
-        .blog-post article blockquote {
-            border-left: 6px solid var(--accent);
-            padding: 24px 32px;
-            margin: 48px 0;
-            background: #111;
-            font-style: italic;
-            font-size: 1.3rem;
-        }
-
-        .blog-post ul {
-            list-style: none;
-            margin: 32px 0;
-        }
-
-        .blog-post ul li {
-            padding: 12px 0;
-            border-bottom: 1px solid #222;
-            display: flex;
-            gap: 16px;
-            align-items: baseline;
-        }
-
-        .blog-post ul li::before {
-            content: '▸';
-            color: var(--accent);
-            font-size: 1.4rem;
-        }
-
-        .blog-post .data-highlight {
-            display: inline-block;
-            background: var(--accent);
-            color: #000;
-            padding: 4px 16px;
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        /* ===== REVIEWS ===== */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: var(--gap);
-            margin-top: var(--gap);
-        }
-
-        .review-card {
-            background: #0f0f0f;
-            border: var(--border-w-heavy) solid #fff;
-            padding: 40px 32px;
-            position: relative;
-            transition: 0.1s;
-        }
-
-        .review-card:hover {
-            border-color: var(--accent);
-        }
-
-        .review-card .stars {
-            color: var(--accent);
-            font-size: 1.8rem;
-            letter-spacing: 4px;
-            margin-bottom: 16px;
-        }
-
-        .review-card blockquote {
-            font-family: system-ui, sans-serif;
-            font-size: 1.1rem;
-            line-height: 1.5;
-            margin-bottom: 24px;
-        }
-
-        .review-card .reviewer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: var(--border-w) solid #333;
-            padding-top: 16px;
-            font-size: 0.95rem;
-        }
-
-        .review-card .reviewer .name {
-            font-weight: 700;
-            color: var(--accent);
-        }
-
-        .review-card .reviewer .date {
-            color: #666;
-            font-family: system-ui, sans-serif;
-        }
-
-        /* ===== CTA SECTION ===== */
-        .cta-block {
-            background: var(--accent);
-            color: #000;
-            text-align: center;
-            padding: var(--padding) var(--padding);
-            border-top: var(--border-w-heavy) solid #fff;
-            border-bottom: var(--border-w-heavy) solid #fff;
-        }
-
-        .cta-block h2 {
-            margin-bottom: 24px;
-            font-size: 3.6rem;
-        }
-
-        .cta-block .cta-phone {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #000;
-            border: var(--border-w-heavy) solid #000;
-            padding: 16px 64px;
-            display: inline-block;
-            transition: 0.1s;
-            background: #fff;
-        }
-
-        .cta-block .cta-phone:hover {
-            background: #000;
-            color: #fff;
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            padding: 48px var(--padding);
-            border-top: var(--border-w-heavy) solid var(--accent);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 24px;
-            background: #000;
-            font-family: system-ui, sans-serif;
-            font-size: 0.85rem;
-        }
-
-        footer .copyright {
-            color: #666;
-        }
-
-        footer .footer-links {
-            display: flex;
-            gap: 32px;
-        }
-
-        footer .footer-links a {
-            border-bottom: none;
-            color: #aaa;
-        }
-
-        footer .footer-links a:hover {
-            color: var(--accent);
-        }
-
-        @media (max-width: 768px) {
-            footer {
-                flex-direction: column;
-                text-align: center;
-            }
-            .cta-block h2 {
-                font-size: 2.2rem;
-            }
-            .cta-block .cta-phone {
-                font-size: 1.8rem;
-                padding: 12px 32px;
-                width: 100%;
-            }
-        }
-
-        /* ===== UTILITIES ===== */
-        .gap-section {
-            height: var(--section-gap);
-            background: #000;
-            border-top: 1px solid #111;
-            border-bottom: 1px solid #111;
-        }
-
-        .svg-icon {
-            width: 1.2em;
-            height: 1.2em;
-            vertical-align: middle;
-            fill: currentColor;
-        }
-
-        hr {
-            border: none;
-            border-top: var(--border-w) solid #222;
-            margin: var(--gap) 0;
-        }
-
-        /* ===== OVERRIDE BROWSER DEFAULTS ===== */
-        ::selection {
-            background: var(--accent);
-            color: #000;
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마곡 코인노래방 할인 블로그 – 현명한 이용 가이드</title>
+  <meta name="description" content="마곡 코인노래방을 처음 이용하는 분들을 위한 실전 할인 팁과 체크리스트, 다양한 상황별 이용 방법을 친절하게 풀어봅니다.">
+  <meta name="keywords" content="마곡 코인노래방, 코인노래방 할인, 마곡 노래방, 코인노래방 활용법, 할인 체크리스트">
+  <link rel="canonical" href="https://magok-song-review.mapo-room-guide.xyz/blog.html">
+  <meta property="og:title" content="마곡 코인노래방 할인 블로그 – 현명한 이용 가이드">
+  <meta property="og:description" content="마곡 코인노래방을 처음 이용하는 분들을 위한 실전 할인 팁과 체크리스트, 다양한 상황별 이용 방법을 친절하게 풀어봅니다.">
+  <meta property="og:url" content="https://magok-song-review.mapo-room-guide.xyz/blog.html">
+  <!-- 기존 CSS 파일은 그대로 유지합니다 -->
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
+  <!-- 네비게이션 (전체 페이지 공통) -->
+  <nav class="m-nav-hlra">
+    <h1>마곡 코인노래방 가이드</h1>
+    <ul>
+      <li><a href="/index.html">홈</a></li>
+      <li><a href="/discount.html">할인 소개</a></li>
+      <li><a href="/blog.html">블로그</a></li>
+      <li><a href="/contact.html">연락처</a></li>
+    </ul>
+  </nav>
 
-<!-- ===== HEADER ===== -->
-<header>
-    <div class="logo">
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="40" height="40" stroke="#ff3b00" stroke-width="4" fill
+  <main class="v-main-movz">
+    <!-- 헤더 -->
+    <section class="v-head-yck4">
+      <h2>마곡 코인노래방 할인, 이렇게 하면 더 알뜰하게!</h2>
+      <p>안녕하세요! 마곡에서 코인노래방을 처음 찾은 여러분을 위해, 할인 적용 방법부터 사전 준비, 실제 이용 절차까지 차근차근 정리해봤어요. 복잡한 절차 없이 바로 시작할 수 있도록 체크리스트도 함께 제공하니, 오늘 바로 확인해 보세요.</p>
+    </section>
+
+    <!-- 할인 적용 방법 -->
+    <section class="t-img-vk8o">
+      <h3>📌 할인 적용을 위한 핵심 포인트</h3>
+      <ul>
+        <li>앱 기반 멤버십 가입 → 첫 방문 시 10% 할인 쿠폰 자동 발급</li>
+        <li>오프라인 현장 프로모션 → 특정 요일에 추가 5% 할인</li>
+        <li>다인용 패키지 구매 → 5인 이상 그룹은 15% 추가 할인</li>
+      </ul>
+      <p>앱을 깔고 회원가입만 하면 기본 쿠폰을 바로 받을 수 있어요. 쿠폰은 마감 전까지 유효하니 알림을 체크해 두면 놓치는 일 없답니다.</p>
+    </section>
+
+    <!-- 사전 준비 체크리스트 -->
+    <section class="q-side-vtzs">
+      <h3>✅ 사전 체크리스트</h3>
+      <p>할인을 놓치지 않으려면 미리 확인해야 할 항목들을 정리했어요. 각각을 체크하고 가면, 입장부터 노래까지 순조롭게 진행됩니다.</p>
+      <ol>
+        <li>앱 최신 버전 설치 여부</li>
+        <li>회원가입 이메일 인증 완료</li>
+        <li>쿠폰 유효 기간 확인</li>
+        <li>현장 할인 안내판 확인 (주말/공휴일 변동 가능)</li>
+        <li>노래방 이용 시간대 별 혼잡도 파악</li>
+      </ol>
+    </section>
+
+    <!-- 단계별 이용 절차 -->
+    <section class="q-side-ph7i">
+      <h3>🔄 단계별 이용 절차</h3>
+      <p>첫 방문에 당황하지 않도록, 입장부터 결제까지의 흐름을 5단계로 나눠봤어요.</p>
+      <div class="t-ico-plci">
+        <h4>1️⃣ 현장 도착 & QR코드 스캔</h4>
+        <p>입구에 비치된 QR코드를 스캔하면 자동으로 회원 정보가 연동됩니다. 화면에 쿠폰이 보이면 ‘사용하기’를 눌러 주세요.</p>
+
+        <h4>2️⃣ 방 선택 & 인원 입력</h4>
+        <p>앱 내 방 선택 화면에서 원하는 방을 고른 뒤, 인원 수를 입력합니다. 인원에 따라 자동 할인율이 적용돼요.</p>
+
+        <h4>3️⃣ 곡 검색 & 리스트 만들기</h4>
+        <p>직접 검색하거나 카테고리 별 탐색으로 곡을 고릅니다. 곡 리스트는 실시간으로 저장돼, 중간에 끊겨도 복구됩니다.</p>
+
+        <h4>4️⃣ 결제 & 할인 적용 확인</h4>
+        <p>결제 단계에서 ‘할인 쿠폰 적용’ 버튼을 누르면 최종 금액에 할인율이 반영됩니다. 영수증에 할인 금액이 명시돼요.</p>
+
+        <h4>5️⃣ 노래 시작 & 즐기기</h4>
+        <p>모든 절차가 끝났다면 마이크를 잡고 노래를 부르기만 하면 됩니다! 필요 시 직원에게 추가 지원을 요청할 수 있어요.</p>
+      </div>
+    </section>
+
+    <!-- 상황별 활용 팁 -->
+    <section class="q-side-8q5k">
+      <h3>💡 상황별 활용 팁</h3>
+      <p>친구와 함께? 혼자서? 혹은 업무 회식? 각각의 상황에 맞는 최적의 전략을 알려드립니다.</p>
+
+      <h4>· 2~4인 소규모 그룹</h4>
+      <p>인당 부담을 줄이고 싶다면 ‘2인 패키지’를 먼저 구매하세요. 기본 할인 외에 인원당 5% 추가 할인이 적용돼요.</p>
+
+      <h4>· 5인 이상 대규모 파티</h4>
+      <p>대규모 파티는 ‘프리미엄 패키지’를 선택하면 전용 라운지와 함께 15% 할인을 받을 수 있습니다. 사전 예약 시 추가 음료 쿠폰도 제공돼요.</p>
+
+      <h4>· 저녁 시간대 (19시~22시) 이용</h4>
+      <p>이 시간대는 평일 대비 10% 추가 할인이 적용됩니다. 다만 인기 방이 빨리 차므로, 최소 30분 전 예약을 권장합니다.</p>
+
+      <h4>· 새벽 (00시~03시) 이용</h4>
+      <p>새벽 시간에는 ‘심야 특가’가 있어 20%까지 할인받을 수 있어요. 하지만 조용한 분위기를 원한다면 방음 시설이 강화된 별도 방을 선택하세요.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="t-img-vk8o">
+      <h3>❓ 자주 묻는 질문</h3>
+      <ul>
+        <li>
+          <strong>Q: 쿠폰은 얼마나 자주 받을 수 있나요?</strong><br>
+          A: 앱 회원은 매월 1회 기본 쿠폰을 자동 발급받으며, 특정 이벤트 시 추가 쿠폰이 제공됩니다.
+        </li>
+        <li>
+          <strong>Q: 할인 적용이 안 될 때는 어떻게 해야 하나요?</strong><br>
+          A: 현장 직원에게 QR코드 스캔 화면을 보여주면 즉시 재발급 및 적용을 도와줍니다.
+        </li>
+        <li>
+          <strong>Q: 예약 없이 바로 방문해도 할인을 받을 수 있나요?</strong><br>
+          A: 네, 현장 프로모션이 적용되는 경우 QR코드 스캔만으로도 할인을 받을 수 있습니다. 다만 인기 시간대는 대기 시간이 길어질 수 있어요.
+        </li>
+        <li>
+          <strong>Q: 결제는 현금만 가능한가요?</strong><br>
+          A: 카드, 모바일 결제, 그리고 앱 내 포인트 결제까지 지원합니다. 포인트는 할인 금액에 따라 자동 차감됩니다.
+        </li>
+      </ul>
+    </section>
+
+    <!-- 마무리 멘트 -->
+    <section class="q-side-ph7i">
+      <h3>🚀 마무리</h3>
+      <p>이제 마곡 코인노래방 할인 활용법을 모두 익히셨으니, 부담 없이 즐거운 노래시간을 계획해 보세요. 작은 준비만으로도 큰 절약을 할 수 있다는 점, 기억해 두시면 좋겠어요. 다음 번 방문에서도 변함없는 할인 혜택을 누리실 수 있도록, 앱 알림을 체크하고 최신 프로모션을 확인해 주세요!</p>
+      <p>즐거운 노래와 함께 행복한 추억 만들기를 응원합니다. 언제든 궁금한 점이 있으면 댓글이나 문의를 남겨 주세요. 감사합니다!</p>
+    </section>
+  </main>
+
+  <footer class="q-side-vtzs">
+    <p>© 2026 마곡 코인노래방 가이드. All rights reserved.</p>
+  </footer>
 </body>
 </html>
